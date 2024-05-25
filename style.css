@@ -1,0 +1,188 @@
+/* GENERAL */
+
+* {
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: green;
+}
+
+button {
+    background-color: rgb(21, 21, 21);
+    color: white;
+    border: 3px solid green;
+    padding-inline: 30px;
+    padding-block: 10px;
+    transition: all 0.4s ease;
+    margin-block: 20px;
+    margin-right: 1%;
+}
+
+button:hover {
+    border: 3px solid rgb(0, 104, 0);
+    background-color: rgb(70, 70, 70);
+}
+
+/* SIMPLE - top, bottom, midle */
+
+.top {
+    width: 90%;
+    height: 10vh;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: rgb(41, 41, 41);
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bottom {
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(41, 41, 41);
+    bottom: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.midle {
+    background-color: black;
+    height: 80vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* MAIN */
+
+.header {
+    background-color: rgb(41, 41, 41);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    /*padding-inline: 5%;*/
+    padding-block: 1%;
+}
+
+.footer {
+    background-color: rgb(41, 41, 41);
+    color: white;
+    bottom: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5vh;
+}
+
+.page {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.con {
+    /* mint content / conatiner */
+    margin: 5%;
+    height: auto;
+}
+
+.space {
+    height: 50px;
+    width: auto;
+}
+
+.line {
+    background-color: /*rgb(182, 182, 182)*/ green;
+    width: 100%;
+    height: 0.5vh;
+    margin-block: 10px;
+}
+
+/* MAIN-CUSTOM */
+
+.footer-parts {
+    display: flex;
+    flex-direction: column;
+    text-align: center; /* ezt majd ha több hasáb lesz leftre kell állítani, ez által simán egymás után lehet rakni a div hasábokat */
+    justify-content: start;
+    height: auto;
+    width: 50vh;
+}
+
+.header-parts1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    width: 50%;
+    padding-left: 5%;
+}
+
+/*.header-parts2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    width: 50%;
+    padding-right: 5%;
+    padding-block: 1%;
+}*/
+
+.navbutton {
+    margin-right: 30px;
+    transition: all 0.3s ease;
+}
+
+.navbutton:hover {
+    color: rgb(105, 194, 105);
+    text-decoration: underline solid 3px;
+}
+
+/* CUSTOM */
+
+.home-text {
+    width: 40%;
+}
+
+.welcome-page {
+    height: 90vh;
+}
+
+/* media screen */
+
+@media screen and (max-width: 1000px) {
+    .home-text {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .home-text {
+        width: 90%;
+    }
+
+    .navbutton {
+        margin-right: 10px;
+    }
+
+    button {
+        margin-right: 2%;
+    }
+
+    .welcome-page {
+        height: 110vh;
+    }
+}
