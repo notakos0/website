@@ -64,6 +64,16 @@ button:hover {
     justify-content: center;
 }
 
+.simp-con {
+    margin-inline: 35%;
+}
+
+@media screen and (max-width: 1050px) {
+    .simp-con {
+        margin-inline: 0;
+    }
+}
+
 /* MAIN */
 
 .header {
@@ -106,6 +116,11 @@ button:hover {
     width: auto;
 }
 
+.space-hor {
+    width: 1000px;
+    height: auto;
+}
+
 .line {
     background-color: /*rgb(182, 182, 182)*/ green;
     width: 100%;
@@ -146,9 +161,22 @@ button:hover {
     transition: all 0.3s ease;
 }
 
+.button-con {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    width: auto;
+}
+
 .navbutton:hover {
     color: rgb(105, 194, 105);
     text-decoration: underline solid 3px;
+}
+
+.pr-con {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
 }
 
 /* CUSTOM */
@@ -159,13 +187,29 @@ button:hover {
 
 .welcome-page {
     height: 90vh;
+    background-image: url('bgimg.jpg');
 }
+
+.pic-icon {
+    max-height: 200px;
+    max-width: 200px;
+    height: auto;
+    width: auto;
+    margin: 20px;
+}
+
 
 /* media screen */
 
 @media screen and (max-width: 1000px) {
     .home-text {
         width: 60%;
+    }
+
+    .pr-con {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
     }
 }
 
@@ -182,7 +226,20 @@ button:hover {
         margin-right: 2%;
     }
 
+    .space-hor {
+        width: 0;
+        height: auto;
+    }
+}
+
+@media screen and (max-height: 700px) {
     .welcome-page {
         height: 110vh;
     }
 }
+/* Bg-video */
+
+/*ide írd a szükséges stylokat*/
+
+
+/*&#x007f;&#x02c3;*/
