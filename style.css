@@ -1,16 +1,21 @@
+/*---------*/
 /* GENERAL */
+/*---------*/
 
 * {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6, p, button {
+h1, h2, h3, h4, h5, h6, p, button, ul {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 a {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: green;
+    text-decoration: underline;
 }
 
 button {
@@ -29,7 +34,17 @@ button:hover {
     background-color: rgb(70, 70, 70);
 }
 
+ul {
+    margin-left: 40px;
+}
+
+red {
+    color: red;
+}
+
+/*-----------------------------*/
 /* SIMPLE - top, bottom, midle */
+/*-----------------------------*/
 
 .top {
     width: 90%;
@@ -74,16 +89,16 @@ button:hover {
     }
 }
 
+/*------*/
 /* MAIN */
+/*------*/
 
 .header {
     background-color: rgb(41, 41, 41);
     color: white;
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    /*padding-inline: 5%;*/
-    padding-block: 1%;
+    padding: 1% 5%;
 }
 
 .footer {
@@ -128,7 +143,9 @@ button:hover {
     margin-block: 10px;
 }
 
+/*-------------*/
 /* MAIN-CUSTOM */
+/*-------------*/
 
 .footer-parts {
     display: flex;
@@ -139,12 +156,18 @@ button:hover {
     width: 50vh;
 }
 
+.header-parts0 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
 .header-parts1 {
     display: flex;
-    flex-direction: row;
-    justify-content: left;
-    width: 50%;
-    padding-left: 5%;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
 }
 
 /*.header-parts2 {
@@ -159,6 +182,7 @@ button:hover {
 .navbutton {
     margin-right: 30px;
     transition: all 0.3s ease;
+    text-decoration: none;
 }
 
 .button-con {
@@ -179,7 +203,9 @@ button:hover {
     justify-content: start;
 }
 
+/*--------*/
 /* CUSTOM */
+/*--------*/
 
 .home-text {
     width: 40%;
@@ -187,7 +213,7 @@ button:hover {
 
 .welcome-page {
     height: 90vh;
-    background-image: url('bgimg.jpg');
+    background-image: url('img/bgimg.jpg');
 }
 
 .pic-icon {
@@ -198,8 +224,136 @@ button:hover {
     margin: 20px;
 }
 
+.pic-icon2 {
+    max-width: 100px;
+    max-height: 100px;
+    height: auto;
+    width: auto;
+    margin-right: 20px;
+}
 
+.pic-normal {
+    margin: 20px;
+    height: auto;
+    width: auto;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.project-row-con {
+    display: flex;
+    flex-direction: row;
+    justify-content: start  ;
+
+}
+
+.project-main-1 {
+    width: 50%;
+}
+
+.project-main-2 {
+    width: 50%;
+}
+
+.project-main-space {
+    width: 30%;
+}
+
+.button-con2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    width: auto;
+}
+
+.vis {
+    display: flex;
+}
+
+.naba-icon {
+    max-width: 70px;
+    max-height: 70px;
+}
+
+.top-text {
+    font-size: xx-large;
+    color: green;
+}
+
+/*---------*/
+/* Gallery */
+/*---------*/
+
+.gallery-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    background-color: black;
+}
+
+.gallery {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-image {
+    display: none;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.gallery-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.gallery-button:hover {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(26, 26, 26, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/*------------------*/
+/* hamburger button */
+/*------------------*/
+
+.hamburger {
+    display: none; /* Alapértelmezésben elrejtve */
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+/*--------------*/
 /* media screen */
+/*--------------*/
 
 @media screen and (max-width: 1000px) {
     .home-text {
@@ -210,6 +364,10 @@ button:hover {
         display: flex;
         flex-direction: column;
         justify-content: start;
+    }
+
+    .project-main-space {
+        width: 10%;
     }
 }
 
@@ -230,6 +388,32 @@ button:hover {
         width: 0;
         height: auto;
     }
+
+    .project-row-con {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    
+    }
+
+    .project-main-1 {
+        width: 100%;
+    }
+    
+    .project-main-2 {
+        width: 100%;
+    }
+    
+    .project-main-space {
+        width: 0;
+        height: 50px;
+    }
+
+    .top-text {
+        font-size: x-large;
+        color: green;
+    }
+
 }
 
 @media screen and (max-height: 700px) {
@@ -237,9 +421,33 @@ button:hover {
         height: 110vh;
     }
 }
-/* Bg-video */
 
-/*ide írd a szükséges stylokat*/
+@media (max-width: 768px) {
 
+    /* hamburger button */
+    .hamburger {
+        display: block; /* Kisebb képernyőn megjelenítve */
+    }
 
-/*&#x007f;&#x02c3;*/
+    .nav-menu {
+        display: none; /* Kisebb képernyőn elrejtve */
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-menu.open {
+        display: flex; /* Megjelenítve a menü gomb megnyomásával */
+    }
+
+    .navbutton {
+        margin: 10px 0;
+    }
+
+    /* more */
+
+    .button-con2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+}
