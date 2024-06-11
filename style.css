@@ -38,8 +38,24 @@ ul {
     margin-left: 40px;
 }
 
+/*------*/
+/*Colors*/
+/*------*/
+
 red {
     color: red;
+}
+
+green {
+    color: green;
+}
+
+orange {
+    color: orange;
+}
+
+blue {
+    color: blue;
 }
 
 /*-----------------------------*/
@@ -47,7 +63,7 @@ red {
 /*-----------------------------*/
 
 .top {
-    width: 90%;
+    width: 100%;
     height: 10vh;
     padding-left: 5%;
     padding-right: 5%;
