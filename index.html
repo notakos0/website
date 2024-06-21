@@ -22,7 +22,7 @@
                 </div>
                 <div class="hamburger" onclick="toggleMenu()">☰</div>
             </div>
-            <div class="line"></div>
+            <div class="line topline"></div>
             <div class="header-parts1 nav-menu">
                 <a class="navbutton" onclick="location.href='index.html'">Home</a>
                 <a class="navbutton" onclick="location.href='projects.html'">Projectek</a>
@@ -36,7 +36,7 @@
             <div class="con">
                 <div class="space"></div>
                 <h1>Ki vagyok?</h1>
-                <p class="home-text"><strong>LANG=HU</strong> Helló! Én egy kezdő, tanuló játékfejlesztő vagyok, de ezen kívül számos más informatikával kapcsolatos dologgal is foglalkozok. A játékaim és más projekteim GitHub-on találhatóak.</p><br>
+                <p class="home-text"><strong>LANG=HU</strong> Helló! Én egy kezdő, tanuló játékfejlesztő vagyok, de ezenkívül számos más informatikával kapcsolatos dologgal is foglalkozom. A játékaim és más projekteim GitHub-on találhatóak.</p><br>
                 <p class="home-text"><strong>LANG=EN</strong> Hello! I am a beginner, learning Game Developer, but besides that, I engage in various other IT activities. My games and other projects can be found on GitHub. </p>
                 <button onclick="location.href='projects.html'">Projects</button>
                 <button onclick="window.open('https://github.com/notakos0')">GitHub</button>
@@ -44,12 +44,48 @@
                 <div class="space"></div>
             </div>
             <div class="con" style="text-align: center;">
-                <h4>\/</h4>
+                <h4 onclick="scrollDown()">\/</h4>
+            </div>
+        </div>
+        <!--Cards-->
+        <div class="page">
+            <div class="con">
+                <div class="space"></div>
+                <h1 style="text-align: center;">Mi történik?</h1>
+                <div class="space"></div>
+                <div class="cards">
+                    <div class="card">
+                        <div class="card-con">
+                            <h1>Hamarosan érkezik</h1>
+                            <p><orange>FormPlat telefonra: </orange>Hamarosan érkezik a FormPlat BÉTA telefonra, most már nem béta formában.</p>
+                            <p><orange>Új játék: </orange> Erről még nem mondhatok semmit, és ez még odébb van!</p>
+                        </div>
+                        <button onclick="location.href='error.html'">Továbbiak</button>
+                    </div>
+                    <div class="card">
+                        <div class="card-con">
+                            <h1>Fontos hírek</h1>
+                            <p><orange>Név változtatás: </orange> A nevemet <em>NotAkosButAkos</em>-ról megváltoztattam <em>NotAkos</em>-ra</p>
+                            <p><orange>Új weboldal: </orange>Megérkezett az új weboldal, még mindent nem sikerült átköltöztetni!</p>
+                            <p><orange>Új játék: </orange>Elkészült egy új játék, lényegében egy flappy bird copy.</p>
+                        </div>
+                        <button onclick="location.href='news.html'">Továbbiak</button>
+                    </div>
+                    <div class="card">
+                        <div class="card-con">
+                            <h1>Min dolgozok jelenleg?</h1>
+                            <p><orange>Weboldal: </orange>Ebben az állapotban a weboldal még nincsen kész, így jelentős időt fordítok a fejlesztésére.</p>
+                            <p><orange>FormPlat játék mobilra: </orange>Úgy döntöttem, a FormPlat nevü játékot telefonos játékká teszem, így ennek a fejlesztésével is sokat foglalkozom!</p>
+                        </div>
+                        <button onclick="location.href='error.html'">Továbbiak</button>
+                    </div>
+                </div>
+                <div class="space"></div>
             </div>
         </div>
         <!--News-->
-        <div class="page">
-            <div class="con">
+        <div class="page" style="background-color: rgb(41, 41, 41);">
+            <div class="con" style="margin-bottom: 0;">
                 <div class="space"></div>
                 <div class="space"></div>
                 <h1>Hírek</h1>
@@ -58,7 +94,7 @@
                 <div class="pr-con">
                     <div>
                         <h2>Új verziók</h2>
-                        <p>Új verzió jelent meg a <a href="pros/coin-drop.html">Coin-Drop</a> játékból és a <a href="pros/brurby-birds.html">Brurby Birds</a> játékból! Mindkettőnél ez csak egy X.X.1-es verzió, tehát nagyon minimális dolgok változtak meg. A nemrégiben történt név változtatás miatt voltak szükségesek a verziók. Ugyan eredetileg a <a href="pros/formplat.html">FormPlat</a> játékból is érkezett volna egy új verzió, de mivel az csak BÉTA állapotban van még inkább nem csináltam meg, illetve nem ez a fő indok, hanem az, hogy az elmult napokban jelentősen fejlesztettem a játékot, és most nincs kiadható állapotban.</p>
+                        <p>Új verzió jelent meg a <a href="pros/coin-drop.html">Coin-Drop</a> játékból és a <a href="pros/brurby-birds.html">Brurby Birds</a> játékból! Mindkettőnél ez csak egy X.X.1-es verzió, tehát nagyon minimális dolgok változtak meg. A nemrégiben történt névváltoztatás miatt voltak szükségesek a verziók. Ugyan eredetileg a <a href="pros/formplat.html">FormPlat</a> játékból is érkezett volna egy új verzió, de mivel az csak BÉTA állapotban van még, inkább nem csináltam meg, illetve nem ez a fő indok, hanem az, hogy az elmult napokban jelentősen fejlesztettem a játékot, és most nincs kiadható állapotban.</p>
                         <br><br>
                         <p><green>2024.06.11. - NotAkos</green></p>
                     </div>
@@ -70,7 +106,7 @@
                 <div class="pr-con">
                     <div>
                         <h2>Új név, új weboldal, új kezdet!</h2>
-                        <p>Igen, sok minden történt! A legfontosabb, hogy lerövidítettem a nevem, a korábbi <em>NotAkosButAkos</em> helyett már csak <em>NotAkos</em>. A nevet, még a játékokban is le kell cserélnem, ez is hamarosan várható. Illetve új weboldal is érkezett! Az előző (idéiglenes) <a href="https://notakosbutakos.webnode.hu/">weboldal</a> egy ingyenes weboldal készítővel készült, így ez számos korlátokkal, hátrányokkal járt, ezért is készült ez a weboldal. Ehhez vásároltam egy domaint is (<a href="https://notakos.hu/">notakos.hu</a>). A régi weboldal viszont nem szűnik meg teljesen. Űrlapokhoz lesz használva, mivel azokat könnyebb <em>manage</em>-elni ott, sőt itt egyátalán nem is lehet, mivel ez a weboldal <em>github pages</em>-en van <em>host</em>-olva.</p>
+                        <p>Igen, sok minden történt! A legfontosabb, hogy lerövidítettem a nevem, a korábbi <em>NotAkosButAkos</em> helyett már csak <em>NotAkos</em>. A nevet, még a játékokban is le kell cserélnem, ez is hamarosan várható. Illetve új weboldal is érkezett! Az előző (ideiglenes) <a href="https://notakosbutakos.webnode.hu/">weboldal</a> egy ingyenes weboldal készítővel készült, így ez számos korlátokkal, hátrányokkal járt, ezért is készült ez a weboldal. Ehhez vásároltam egy domaint is (<a href="https://notakos.hu/">notakos.hu</a>). A régi weboldal viszont nem szűnik meg teljesen. Űrlapokhoz fogom majd használni, mivel azokat könnyebb <em>manage</em>-elni ott, sőt itt egyátalán nem is lehet, mivel ez a weboldal <em>github pages</em>-en van <em>host</em>-olva.</p>
                         <br>
                         <p><strong><red>[ ! ]</red> Az űrlapok itt találhatóak: <a href="contact.html">kapcsolat</a></strong></p>
                         <p><strong><red>[ ! ]</red> Hamarosan érkezik minden játékból egy új verzió, az új névvel és új linkekkel!</strong></p>
@@ -85,7 +121,7 @@
             </div>
         </div>
         <!--Random thing-->
-        <div class="page" style="background-image: url('img/bgimg2.jpg');">
+        <div class="page">
             <div class="con" style="text-align: center;">
                 <div class="space"></div>
                 <h1>Játékok</h1>
@@ -95,7 +131,7 @@
             </div>
         </div>
         <!--Eventek-->
-        <div class="page">
+        <div class="page" style="background-color: rgb(41, 41, 41);">
             <div class="con">
                 <div class="space"></div>
                 <div class="space"></div>
@@ -107,7 +143,7 @@
             </div>
         </div>
         <!--Random thing-->
-        <div class="page" style="background-image: url('img/bgimg2.jpg');">
+        <div class="page">
             <div class="con" style="text-align: center;">
                 <div class="space"></div>
                 <h1>Letöltési útmutató</h1>

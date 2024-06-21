@@ -14,12 +14,24 @@ function changeSlide(step) {
     showSlide(currentSlide);
 }
 
-// Initial call to show the first slide
+//show the first slide
 showSlide(currentSlide);
 
 //menu
 
 function toggleMenu() {
     var navMenu = document.querySelector('.nav-menu');
-    navMenu.classList.toggle('open'); // Menü megjelenítése/elrejtése
+    var topLine = document.querySelector('.topline');
+    navMenu.classList.toggle('open');
+    topLine.classList.toggle('set');
+}
+
+//scrolldown
+
+function scrollDown() {
+    window.scrollBy({
+        top: window.innerHeight,
+        left: 0,
+        behavior: 'smooth'
+    });
 }
